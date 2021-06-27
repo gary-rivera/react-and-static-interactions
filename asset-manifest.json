@@ -1,17 +1,15 @@
 {
   "files": {
-    "main.js": "/react-and-static-interactions/static/js/main.04084b3e.chunk.js",
-    "main.js.map": "/react-and-static-interactions/static/js/main.04084b3e.chunk.js.map",
-    "runtime-main.js": "/react-and-static-interactions/static/js/runtime-main.7cbc1ce8.js",
-    "runtime-main.js.map": "/react-and-static-interactions/static/js/runtime-main.7cbc1ce8.js.map",
-    "static/js/2.eb458ba6.chunk.js": "/react-and-static-interactions/static/js/2.eb458ba6.chunk.js",
-    "static/js/2.eb458ba6.chunk.js.map": "/react-and-static-interactions/static/js/2.eb458ba6.chunk.js.map",
-    "static/js/3.430368ff.chunk.js": "/react-and-static-interactions/static/js/3.430368ff.chunk.js",
-    "static/js/3.430368ff.chunk.js.map": "/react-and-static-interactions/static/js/3.430368ff.chunk.js.map",
-    "3a0f54568c617afbc876915d52ecaef4.js": "/react-and-static-interactions/3a0f54568c617afbc876915d52ecaef4.js",
-    "3a0f54568c617afbc876915d52ecaef4.js.LICENSE.txt": "/react-and-static-interactions/3a0f54568c617afbc876915d52ecaef4.js.LICENSE.txt",
+    "main.js": "/react-and-static-interactions/static/js/main.b79a434a.chunk.js",
+    "main.js.map": "/react-and-static-interactions/static/js/main.b79a434a.chunk.js.map",
+    "runtime-main.js": "/react-and-static-interactions/static/js/runtime-main.4be36361.js",
+    "runtime-main.js.map": "/react-and-static-interactions/static/js/runtime-main.4be36361.js.map",
+    "static/js/2.69ebcf4f.chunk.js": "/react-and-static-interactions/static/js/2.69ebcf4f.chunk.js",
+    "static/js/2.69ebcf4f.chunk.js.map": "/react-and-static-interactions/static/js/2.69ebcf4f.chunk.js.map",
+    "static/js/3.43e31975.chunk.js": "/react-and-static-interactions/static/js/3.43e31975.chunk.js",
+    "static/js/3.43e31975.chunk.js.map": "/react-and-static-interactions/static/js/3.43e31975.chunk.js.map",
     "index.html": "/react-and-static-interactions/index.html",
-    "static/js/2.eb458ba6.chunk.js.LICENSE.txt": "/react-and-static-interactions/static/js/2.eb458ba6.chunk.js.LICENSE.txt",
+    "static/js/2.69ebcf4f.chunk.js.LICENSE.txt": "/react-and-static-interactions/static/js/2.69ebcf4f.chunk.js.LICENSE.txt",
     "static/media/athlete-small.9c7a85d4.png": "/react-and-static-interactions/static/media/athlete-small.9c7a85d4.png",
     "static/media/athlete2.b216a5ad.png": "/react-and-static-interactions/static/media/athlete2.b216a5ad.png",
     "static/media/clock.4b7cde7e.svg": "/react-and-static-interactions/static/media/clock.4b7cde7e.svg",
@@ -27,8 +25,8 @@
     "static/media/theracer-small.51874213.png": "/react-and-static-interactions/static/media/theracer-small.51874213.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7cbc1ce8.js",
-    "static/js/2.eb458ba6.chunk.js",
-    "static/js/main.04084b3e.chunk.js"
+    "static/js/runtime-main.4be36361.js",
+    "static/js/2.69ebcf4f.chunk.js",
+    "static/js/main.b79a434a.chunk.js"
   ]
 }
