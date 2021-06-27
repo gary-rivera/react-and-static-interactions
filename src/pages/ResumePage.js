@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-// import resume from '../resume.pdf'
+import resume from '../resume.pdf'
 
 function ResumePage({ pdf }) {
   const [numPages, setNumPages] = useState(null);
@@ -12,10 +12,10 @@ function ResumePage({ pdf }) {
   }
 
   return (
-    <div> Hi </div>
-    // <Document file={pdf}>
-    //   <Page pageNumber={1} />
-    // </Document>
+    // <div> Hi </div>
+    <Document file={pdf}>
+      <Page pageNumber={1} />
+    </Document>
   )
 }
 
