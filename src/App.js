@@ -17,7 +17,6 @@ function App() {
 
   return (
     <div className="App">
-          <Route path="resume.pdf" onEnter={reload}><ResumePage pdf={resume} /></Route>
       <GlobalStyle />
       <Nav />
       <AnimatePresence exitBeforeEnter>

@@ -32,16 +32,16 @@ function AboutSection() {
             <motion.h3 variants={titleAnim}><span> Software</span> Developer</motion.h3>
           </JobTitleStyle>
         </motion.div>
-        <motion.button
-          // className="resume-button" 
-          // href="resume.pdf" 
-          // target="_blank" rel="noopener noreferrer"
-        onClick = {(evt) => {
-          evt.preventDefault();
-          window.open('/resume.pdf')
-        }}
+        <motion.a
+          className="resume-button" 
+          href="resume.pdf" 
+          target="_blank" rel="noopener noreferrer"
+        // onClick = {(evt) => {
+        //   evt.preventDefault();
+        //   window.open('/resume.pdf')
+        // }}
         variants={fade}
-        > View Resume</motion.button>
+        > View Resume</motion.a>
       </AboutMeStyle>
       <Wave />
     </AboutStyle>
