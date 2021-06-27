@@ -43,14 +43,6 @@ function AboutSection() {
         variants={fade}
         > View Resume</motion.a>
       </AboutMeStyle>
-      <ImageStyle> 
-        <motion.img 
-        variants={photoAnim} 
-        initial="hidden"
-        animate="show"
-        src={home1} 
-        alt="landing page profile pic"/>
-      </ImageStyle>
       <Wave />
     </AboutStyle>
   )
