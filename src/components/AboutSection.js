@@ -34,7 +34,7 @@ function AboutSection() {
         </motion.div>
         <motion.a
           className="resume-button" 
-          href="/resume.pdf" 
+          href="resume.pdf" 
           target="_blank" rel="noopener noreferrer"
         // onClick = {(evt) => {
         //   evt.preventDefault();
