@@ -2,7 +2,7 @@ import styled from 'styled-components';
 //animations
 import { motion } from 'framer-motion';
 import { pageAnimation, titleAnim } from "../animation"
-import ScrollTop from '../components/ScrollTop';
+import ScrollTop from '../utils/ScrollTop';
 
 
 function ContactUs() {

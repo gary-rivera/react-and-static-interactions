@@ -11,7 +11,7 @@ function Nav() {
       <h1> <Link to="/" id="logo">@GaryDevelops</Link></h1>
       <ul>
         <li>
-          <Link to="/">About Me</Link>
+          <Link to="/">About</Link>
           <Line
             transition={{duration: 0.75}}
             initial={{ width: "0%" }}
@@ -94,7 +94,7 @@ const NavStyle = styled.nav`
 
 const Line = styled(motion.div)`
   height: 0.3rem;
-  background: #23d997;
+  background: #00695C;
   width: 0%;
   position: absolute;
   bottom: -80%;

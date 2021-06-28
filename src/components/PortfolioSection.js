@@ -1,18 +1,20 @@
+import Project from "./Project";
+
 // services icons
 import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
-import home2 from "../img/home2.png";
+import { motion } from "framer-motion";
+
 //Styles
-import { AboutStyle, DescriptionStyle , ImageStyle } from '../styles.js';
+import { AboutStyle, DescriptionStyle , ImageStyle, HideStyle } from '../styles.js';
+import { titleAnim } from "../animation";
 import styled from "styled-components";
 import { scrollReveal } from "../animation";
-import { useScroll } from "./useScroll";
+import { useScroll } from "../utils/useScroll";
 
-
-
-function ServicesSection() {
+function PortfolioSection() {
   const [element, controls] = useScroll();
 
   return (
@@ -23,8 +25,13 @@ function ServicesSection() {
       ref={element}
     >
       <DescriptionStyle>
-        <h2>High <span> quality</span> services</h2>
+        <HideStyle> 
+          <motion.h2 id="portfolio" variants={titleAnim}>
+            <span>Past</span> Projects
+          </motion.h2>
+        </HideStyle>
         <CardsStyle>
+          <Project className="project"/>
           <CardStyle>
             <div className="icon">
               <img src={clock} alt="clock"/>
@@ -55,9 +62,6 @@ function ServicesSection() {
           </CardStyle>
         </CardsStyle>
       </DescriptionStyle>
-      <ImageStyle>
-        <img alt="camera" src={home2} />
-      </ImageStyle>
     </ServicesStyle>
   )
 }
@@ -65,6 +69,7 @@ function ServicesSection() {
 const ServicesStyle = styled(AboutStyle)`
   h2 {
     padding-bottom: 5rem;
+    text-align: center;
   }
 
   p {
@@ -95,4 +100,4 @@ const CardStyle = styled.div`
   }
 `;
 
-export default ServicesSection;
+export default PortfolioSection;

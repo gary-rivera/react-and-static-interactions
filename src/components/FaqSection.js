@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { AboutStyle } from '../styles';
 import { useState } from 'react';
-import Toggle from './Toggle';
+import Toggle from '../utils/Toggle';
 import { AnimateSharedLayout } from 'framer-motion';
-import { useScroll } from "./useScroll";
+import { useScroll } from "../utils/useScroll";
 import { scrollReveal } from '../animation'
 
 function FaqSection() {
