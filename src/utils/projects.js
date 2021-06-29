@@ -10,7 +10,7 @@ import flappyJS from '../img/projectScreenshots/flappyJS.png'
 
 
 const projects = {
-  title: "Flappy Bird in < 30 Lines",
+  title: "FlappyJS",
   repoLink: 'https://github.com/gary-rivera/flappy-bird-vanilla-js',
   deployedLink: 'https://gary-rivera.github.io/flappy-bird-vanilla-js/',
   technologies: ['Javascript', 'py'],

@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const AboutStyle = styled(motion.div)`
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 20rem;
+  padding: 3rem 20rem;
   color: white;
 
   p {
@@ -21,7 +21,6 @@ export const AboutStyle = styled(motion.div)`
 `;
 export const DescriptionStyle = styled.div`
   flex: 1;
-  padding-right: 5rem;
   z-index: 2;
   h2 {
     font-weight: lighter;

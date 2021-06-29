@@ -27,15 +27,26 @@ button {
   font-size: 1.1.rem;
   cursor: pointer;
   padding: 1rem 2rem;
-  border: 3px solid #00695C;
+  border: 3px solid #52b788;
   background: transparent;
   color: white;
   transition: all 0.5s ease;
   font-family: 'Inter', sans-serif;
   &:hover {
-    background-color: #00695C;
+    background-color: #52b788;
     color: white;
   }
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-family: 'Dancing Script', cursive;
+    font-weight: lighter;
+}
+
+#alt_font{
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: normal;
 }
 
 h2 {
@@ -56,11 +67,13 @@ h4 {
 
 a {
   font-size: 1.1rem;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 span {
   font-weight: bold;
-  color: #00695C;
+  color: #52b788;
 }
 
 p {

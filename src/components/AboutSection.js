@@ -1,36 +1,33 @@
+import SectionTitle from "../utils/SectionTitle";
+import Project from "./Project";
+
 //Styling
 import styled from "styled-components";
 import { AboutStyle, DescriptionStyle , ImageStyle, HideStyle } from '../styles.js';
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from '../animation'
+import { scrollReveal } from "../animation";
+import { useScroll } from "../utils/useScroll";
 import Wave from './Wave'
 
+
+//Styles
+
+
+
 function AboutSection() {
+  const [element, controls] = useScroll();
+
   return (
-    <AboutStyle id="about">
+    <AboutStyle 
+      id="about"
+      variants={scrollReveal}
+      initial="hidden"
+      animate={controls}
+      ref={element}
+    >
       <DescriptionStyle>
-        <motion.div className="title"> 
-          <HideStyle>
-            <motion.h2 variants={titleAnim}> 
-              Gary <span>Rivera</span>
-            </motion.h2>
-          </HideStyle>
-          <HideStyle>
-            <motion.h3 variants={titleAnim}><span> Software</span> Developer</motion.h3>
-          </HideStyle>
-        </motion.div>
-        <motion.p >
-        I'm a software engineer who loves React and creative problem solving. I've just graduated from <span> Rithm School</span> and actively looking for my next team to contribute to!
-        </motion.p>
-        <motion.button
-          onClick = {(evt) => {
-            evt.preventDefault();
-            window.open('/resume.pdf')
-          }}
-          variants={fade}
-        >
-          View Resume
-        </motion.button>
+        <SectionTitle title="About" index="1"/>
       </DescriptionStyle>
       {/* <Wave /> */}
     </AboutStyle>
@@ -38,3 +35,21 @@ function AboutSection() {
 }
 
 export default AboutSection;
+
+{/* <PortfolioStyle
+variants={scrollReveal}
+initial="hidden"
+animate={controls}
+ref={element}
+>
+<DescriptionStyle>
+  <HideStyle>
+    <motion.h2 id="portfolio" variants={titleAnim}>
+      <SectionTitle title="Portfolio" index="2"/>
+    </motion.h2>
+  </HideStyle>
+  <CardsStyle>
+    <Project />
+  </CardsStyle>
+</DescriptionStyle>
+</PortfolioStyle> */}

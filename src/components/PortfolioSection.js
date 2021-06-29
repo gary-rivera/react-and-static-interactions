@@ -1,11 +1,6 @@
 import Project from "./Project";
-
-// services icons
-import clock from "../img/clock.svg";
-import diaphragm from "../img/diaphragm.svg";
-import money from "../img/money.svg";
-import teamwork from "../img/teamwork.svg";
 import { motion } from "framer-motion";
+import SectionTitle from "../utils/SectionTitle";
 
 //Styles
 import { AboutStyle, DescriptionStyle , ImageStyle, HideStyle } from '../styles.js';
@@ -18,57 +13,31 @@ function PortfolioSection() {
   const [element, controls] = useScroll();
 
   return (
-    <ServicesStyle
+    <PortfolioStyle
       variants={scrollReveal}
       initial="hidden"
       animate={controls}
       ref={element}
     >
       <DescriptionStyle>
-        <HideStyle> 
+        <HideStyle>
           <motion.h2 id="portfolio" variants={titleAnim}>
-            <span>Past</span> Projects
+            <SectionTitle title="Portfolio" index="2"/>
           </motion.h2>
         </HideStyle>
         <CardsStyle>
-          <Project className="project"/>
-          <CardStyle>
-            <div className="icon">
-              <img src={clock} alt="clock"/>
-              <h3> Sub-Title</h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </CardStyle>
-          <CardStyle>
-            <div className="icon">
-              <img src={teamwork} alt="teamwork"/>
-              <h3> Sub-Title</h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </CardStyle>
-          <CardStyle>
-            <div className="icon">
-              <img src={diaphragm} alt="aperture"/>
-              <h3> Sub-Title</h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </CardStyle>
-          <CardStyle>
-            <div className="icon">
-              <img src={money} alt="money icon"/>
-              <h3> Sub-Title</h3>
-            </div>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </CardStyle>
+          <Project />
         </CardsStyle>
       </DescriptionStyle>
-    </ServicesStyle>
+    </PortfolioStyle>
   )
 }
 
-const ServicesStyle = styled(AboutStyle)`
+const PortfolioStyle = styled(AboutStyle)`
+  display: flex;
+  justify-content: center;
   h2 {
-    padding-bottom: 5rem;
+    /* padding-bottom: 5rem; */
     text-align: center;
   }
 
@@ -78,9 +47,16 @@ const ServicesStyle = styled(AboutStyle)`
   }
 `;
 
+const ProjectBoardStyle = styled(DescriptionStyle)`
+  display: flex;
+  justify-content: center;
+`;
+
 const CardsStyle = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+
+  /* flex-wrap: wrap; */
   @media (max-width: 1300px) {
     justify-content: center;
   }
@@ -99,5 +75,6 @@ const CardStyle = styled.div`
     }
   }
 `;
+
 
 export default PortfolioSection;

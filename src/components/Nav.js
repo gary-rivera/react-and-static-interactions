@@ -11,23 +11,13 @@ function Nav() {
       <h1> <Link to="/" id="logo">@GaryDevelops</Link></h1>
       <ul>
         <li>
-          <Link to="/">About</Link>
-          <Line
-            transition={{duration: 0.75}}
-            initial={{ width: "0%" }}
-            animate={{ width: pathname === "/" ? "50%" : "0%" }}
-          />
+          <Link to="/"><span id="alt_font">01. </span>About</Link>
         </li>
         <li>
-          <Link to="/work">Portfolio</Link>
-          <Line
-            transition={{duration: 0.75}}
-            initial={{ width: "0%" }}
-            animate={{ width: pathname.startsWith("/work") ? "50%" : "0%" }}
-          />
+          <Link to="/work"><span id="alt_font">02. </span>Portfolio</Link>
         </li>
         <li>
-          <Link to="/contact">Connect</Link>
+          <Link to="/contact"><span id="alt_font">03. </span>Connect</Link>
           <Line
             transition={{duration: 0.75}}
             initial={{ width: "0%" }}
@@ -61,12 +51,6 @@ const NavStyle = styled.nav`
   ul {
     display: flex;
     list-style: none;
-  }
-
-  #logo {
-    font-size: 1.5rem;
-    font-family: 'Dancing Script', cursive;
-    font-weight: lighter;
   }
 
   li {
