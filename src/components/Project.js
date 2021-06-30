@@ -13,7 +13,7 @@ import styled from "styled-components";
 
 function Project() {
   return (
-    <ProjectStyle className="container">
+    <ProjectStyle>
       <div className="image-container">
         <a className="repo" href={projects.deployedLink}>
           <img className="project-image"src={projects.img} alt={projects.title}/>
@@ -49,7 +49,6 @@ const ProjectStyle = styled.div`
   /* background: #282828; */
   border: 1px solid rgba(255, 255, 255, 0.5); 
   border-radius: 5px;
-
   display:flex;
   width: 50vw;
 

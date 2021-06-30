@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import SectionTitle from "../utils/SectionTitle";
 
 //Styles
-import { AboutStyle, DescriptionStyle , ImageStyle, HideStyle } from '../styles.js';
+import { AboutStyle, DescriptionStyle, HideStyle } from '../styles.js';
 import { titleAnim } from "../animation";
 import styled from "styled-components";
 import { scrollReveal } from "../animation";
@@ -61,20 +61,5 @@ const CardsStyle = styled.div`
     justify-content: center;
   }
 `;
-
-const CardStyle = styled.div`
-  flex-basis: 20rem;
-  .icon {
-    display: flex;
-    align-items: center;
-    h3 {
-      /* margin-left: 1rem; */
-      background: white;
-      color: black;
-      padding: 1rem;
-    }
-  }
-`;
-
 
 export default PortfolioSection;

@@ -19,7 +19,7 @@ function Main() {
       <IntroSection />
       <AboutSection />
       <PortfolioSection />
-      <FaqSection/>
+      {/* <FaqSection/> */}
       <ScrollTop />
     </motion.div>
   );

@@ -33,13 +33,16 @@ export const DescriptionStyle = styled.div`
   }
 `;
 export const ImageStyle = styled.div`
+  display: inline-block;
   z-index: 2;
   flex: 1;
   overflow: hidden;
+  padding: 0rem 3rem;
   img {
-    width: 100%;
-    height: 80vh;
     object-fit: cover;
+    border-radius: 5px;
+    width: 15vw;
+    height: auto;
   }
 `;
 

@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 function SectionTitle(props) {
   const {title} = props;
-  console.log(title.toLowerCase())
 
   return (     
     <TitleStyle>
@@ -30,7 +29,7 @@ const TitleStyle = styled.div`
 
 const LineStyle = styled.div`
   width: 40%;
-  border-top: 1px solid rgba(255, 255, 255, 0.25); 
+  border-top: 1px solid rgba(255, 255, 255, 1); 
   margin: 0rem 1rem;
 `;
 
